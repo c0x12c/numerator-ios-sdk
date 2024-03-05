@@ -2,7 +2,7 @@
 //  Sample_SwiftUIApp.swift
 //  Sample-SwiftUI
 //
-//  Created by DANG KHANH TUONG on 04/03/2024.
+//  Created by C0X12C.COM on 04/03/2024.
 //
 
 import SwiftUI

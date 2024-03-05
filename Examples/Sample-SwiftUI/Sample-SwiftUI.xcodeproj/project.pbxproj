@@ -11,7 +11,23 @@
 		A93E18602B95CF9B005C8F36 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93E185F2B95CF9B005C8F36 /* ContentView.swift */; };
 		A93E18622B95CF9C005C8F36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A93E18612B95CF9C005C8F36 /* Assets.xcassets */; };
 		A93E18652B95CF9C005C8F36 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A93E18642B95CF9C005C8F36 /* Preview Assets.xcassets */; };
+		A949E4EA2B970C80002DDB95 /* NumeratorSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A949E4E42B96D676002DDB95 /* NumeratorSDK.xcframework */; };
+		A949E4EB2B970C80002DDB95 /* NumeratorSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A949E4E42B96D676002DDB95 /* NumeratorSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A949E4EC2B970C80002DDB95 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A949E4EB2B970C80002DDB95 /* NumeratorSDK.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A93E185A2B95CF9B005C8F36 /* Sample-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +35,7 @@
 		A93E185F2B95CF9B005C8F36 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A93E18612B95CF9C005C8F36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A93E18642B95CF9C005C8F36 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A949E4E42B96D676002DDB95 /* NumeratorSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = NumeratorSDK.xcframework; path = ../../NumeratorSDK.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A949E4EA2B970C80002DDB95 /* NumeratorSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +55,7 @@
 			children = (
 				A93E185C2B95CF9B005C8F36 /* Sample-SwiftUI */,
 				A93E185B2B95CF9B005C8F36 /* Products */,
+				A949E4E32B96D676002DDB95 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +86,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		A949E4E32B96D676002DDB95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A949E4E42B96D676002DDB95 /* NumeratorSDK.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +104,7 @@
 				A93E18562B95CF9B005C8F36 /* Sources */,
 				A93E18572B95CF9B005C8F36 /* Frameworks */,
 				A93E18582B95CF9B005C8F36 /* Resources */,
+				A949E4EC2B970C80002DDB95 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
