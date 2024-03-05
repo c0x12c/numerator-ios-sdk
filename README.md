@@ -21,14 +21,18 @@ And supports the following device platforms:
 ## Table of Contents
 
 - [Installation](#installation)
-- [Usage](#usage)
+- [Example app](#example)
 
 ## Installation
 
 ### Swift Package Manager
+Add `https://github.com/c0x12c/numerator-ios-sdk` as a Swift Package Repository in Xcode and follow the instructions to add `Numerator` as a Swift Package.
 
 ### Manual Installation
+1. [Download Numerator for iOS](https://github.com/c0x12c/numerator-ios-sdk/releases/download/1.0.0/NumeratorSDK.xcframework.zip) and extract the zip.
+2. Drag `Numerator.xcframework` into your project. 
 
-## Usage
+## Example app
+There are example apps provided [here](https://github.com/c0x12c/numerator-ios-sdk/tree/master/Examples) for Swift, as well as an example built with SwiftUI.
 
   
