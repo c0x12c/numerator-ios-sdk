@@ -2,16 +2,26 @@
 //  Sample_SwiftUIApp.swift
 //  Sample-SwiftUI
 //
-//  Created by C0X12C.COM on 04/03/2024.
+//  Created by io.numerator on 04/03/2024.
 //
 
 import SwiftUI
+import NumeratorSDK
 
 @main
 struct Sample_SwiftUIApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  
+  init() {
+    NumeratorFeatureFlagProvider.configure(
+      apiKey: "",
+      pollingConfig: PollingModes.autoPoll(autoPollIntervalSeconds: 30)
+    )
+    NumeratorFeatureFlagProvider.shared.printToConsole(true)
+  }
+  
+  var body: some Scene {
+    WindowGroup {
+      ContentView()
     }
+  }
 }

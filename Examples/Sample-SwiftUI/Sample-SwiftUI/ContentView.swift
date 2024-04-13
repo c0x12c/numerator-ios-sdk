@@ -2,83 +2,89 @@
 //  ContentView.swift
 //  Sample-SwiftUI
 //
-//  Created by C0X12C.COM on 04/03/2024.
+//  Created by io.numerator on 04/03/2024.
 //
 
 import SwiftUI
 import NumeratorSDK
+import Combine
 
 struct ContentView: View {
   
-  @State var startNumerator: Bool = true
+  @NumeratorFeatureFlag(
+    key: "flag_A",
+    defaultValue: false,
+    flagProvider: NumeratorFeatureFlagProvider.shared
+  ) var boolFlag: Bool
+  
+  @NumeratorFeatureFlag(
+    key: "flag_B",
+    defaultValue: "Hi superman...",
+    flagProvider: NumeratorFeatureFlagProvider.shared
+  ) var stringFlag: String
   
   var body: some View {
     contentView
-      .onAppear {
-        let config = NumeratorConfigs(
-          apiKey: "",
-          isDebugMode: true
-        )
-        NumeratorClient.start(config) {
-          self.startNumerator = false
-        }
+      .onReceive(NumeratorFeatureFlagProvider.shared.flagUpdatedPublisher) { _ in
+        print("Feature flag is updated")
+      }
+      .onReceive(NumeratorFeatureFlagProvider.shared.flagUpdatedErrorPublisher) { error in
+        print("Feature flag is update error:\(error)")
       }
   }
   
   @ViewBuilder
   var contentView: some View {
-    if !startNumerator {
-      VStack {
-        Button("Fetch FeatureFlag List") {
-          Task {
-            do {
-              let responder = try await NumeratorClient.instances?.featureFlags()
-              print("featureFlags->>>>>>>>>>>>>:\(String(describing: responder))")
-            } catch let error {
-              print("error: \(error)")
-            }
+    VStack {
+      Button("Fetch FeatureFlag List") {
+        Task {
+          do {
+            let responder = try await NumeratorFeatureFlagProvider.shared.getFeatureFlags(page: 0, size: 50)
+            print("featureFlags->>>>>>>>>>>>>:\(String(describing: responder))")
+          } catch let error {
+            print("error: \(error)")
           }
         }
-        .frame(width: 320)
-        .frame(height: 44)
-        
-        Button("Fetch Detail FeatureFlag") {
-          Task {
-            do {
-              let responder = try await NumeratorClient.instances?.featureFlagDetails(forKey: "featureflag_02")
-              print("featureFlagDetails->>>>>>>>>>>>>:\(String(describing: responder))")
-            } catch let error {
-              print("error ->>>>>>:\(error)")
-            }
-          }
-        }
-        .frame(width: 320)
-        .frame(height: 44)
-        
-        Button("Fetch Bool flag Value") {
-          Task {
-            let responder = await NumeratorClient.instances?.boolVariationValue(forKey: "featureflag_03", defaultValue: false, context: ["environment": "Dev"])
-            print("boolVariationValue->>>>>>>>>>>>>:\(String(describing: responder))")
-          }
-        }
-        .frame(width: 320)
-        .frame(height: 44)
-        
-        Button("Fetch string flag Value") {
-          Task {
-            let responder = await NumeratorClient.instances?.stringVariationValue(forKey: "featureflag_022", defaultValue: "Empty_String")
-            print("stringVariationValue->>>>>>>>>>>>>:\(String(describing: responder))")
-          }
-        }
-        .frame(width: 320)
-        .frame(height: 44)
       }
-      .padding()
-    } else {
-      ProgressView() {
-          Text("Loading...")
+      .frame(width: 320)
+      .frame(height: 44)
+      
+      Button("Fetch Detail FeatureFlag") {
+        Task {
+          do {
+            let responder = try await NumeratorFeatureFlagProvider.shared.featureFlagDetails(key: "flag_B")
+            print("featureFlagDetails->>>>>>>>>>>>>:\(String(describing: responder))")
+          } catch let error {
+            print("error ->>>>>>:\(error)")
+          }
+        }
       }
+      .frame(width: 320)
+      .frame(height: 44)
+      
+      Button("Fetch Bool flag Value") {
+        if boolFlag {
+          print("You are a good man")
+        } else {
+          print("You are a bad man")
+        }
+      }
+      .frame(width: 320)
+      .frame(height: 44)
+      
+      Button("Fetch string flag Value") {
+        if stringFlag == "You are a good man" {
+          print("You are a good man")
+        } else if stringFlag == "You are a bad man" {
+          print("You are a bad man")
+        } else {
+          print("You are a superman")
+        }
+      }
+      .frame(width: 320)
+      .frame(height: 44)
     }
+    .padding()
   }
   
   func onAppear() {
@@ -89,4 +95,3 @@ struct ContentView: View {
 #Preview {
   ContentView()
 }
-

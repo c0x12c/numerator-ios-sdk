@@ -1,5 +1,5 @@
 # Changelog
 
-## [1.0.0] - 2022-01-01
+## [0.0.1] - 2024-13-04
 ### Initial
-- Numerator-swift-sdk
+- Numerator-ios-sdk
