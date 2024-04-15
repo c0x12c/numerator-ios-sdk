@@ -12,11 +12,11 @@ import NumeratorSDK
 struct Sample_SwiftUIApp: App {
   
   /// You need to create Project in the Numerator Console and get your API Key
-  /// And create feature flag with Test Case is Defined in [Demo: Integrating numerator-sdk. coffee]
+  /// And create feature flag with Test Case is Defined in [Demo: Integrating numerator-sdk.coffee]
   
   init() {
     NumeratorFeatureFlagProvider.configure(
-      apiKey: "YOUR_API_KEY",
+      apiKey: "API_KEY",
       pollingConfig: PollingModes.autoPoll(autoPollIntervalSeconds: 16)
     )
     NumeratorFeatureFlagProvider.shared.printToConsole(true)

@@ -13,9 +13,9 @@ struct ContentView: View {
   
   @NumeratorFeatureFlag(
     key: "enable_land_pet",
-    defaultValue: false,
+    defaultValue: true,
     flagProvider: NumeratorFeatureFlagProvider.shared
-  ) var boolFlag: Bool
+  ) var isLandAnimal: Bool
   
   @NumeratorFeatureFlag(
     key: "rare_animal",
@@ -38,13 +38,17 @@ struct ContentView: View {
   @State private var currentPetIndex = Int.random(in: 0..<5)
   @State private var showPlayAgain = false
   
+  @State private var isLoadingGame = true
+  
   var landPets = ["cat", "dog", "rabbit", "lion", "deer"]
-  var seaPets = ["fish", "whale", "shark", "starfish", "penguin"]
+  var seaPets = ["whale", "shark", "starfish", "penguin"]
   
   var body: some View {
     contentView
       .onReceive(NumeratorFeatureFlagProvider.shared.flagUpdatedPublisher) { _ in
         print("Feature flag is updated")
+        pets = isLandAnimal ? landPets : seaPets
+        isLoadingGame = false
       }
       .onReceive(NumeratorFeatureFlagProvider.shared.flagUpdatedErrorPublisher) { error in
         print("Feature flag is update error:\(error)")
@@ -53,11 +57,25 @@ struct ContentView: View {
   
   @ViewBuilder
   var contentView: some View {
+    if isLoadingGame {
+      loadingView
+    } else {
+      gameView
+    }
+  }
+  
+  var loadingView: some View {
+    ProgressView("Loading game...")
+      .font(.system(size: 24, weight: .medium, design: .rounded))
+      .tint(.blue)
+  }
+  
+  var gameView: some View {
     ScrollView {
       VStack {
         HStack {
           Text("Reset game")
-            .font(.title3)
+            .font(.system(size: 18, weight: .medium, design: .rounded))
           Button(action: {
             resetGame()
           }) {
@@ -70,9 +88,10 @@ struct ContentView: View {
         .padding(.bottom, 5)
         
         Text(currentTitle)
-          .font(.title)
+          .font(.system(size: 24, weight: .bold, design: .rounded))
           .multilineTextAlignment(.center)
           .lineLimit(2)
+          .foregroundColor(isLandAnimal ? .brown : .blue)
         
         Image(pets[currentPetIndex])
           .resizable()
@@ -82,8 +101,10 @@ struct ContentView: View {
             overLayResult
               .opacity(result.isEmpty ? 0 : 1)
           })
+          .clipShape(RoundedRectangle(cornerRadius: 20))
         
         TextField("Enter your guess", text: $guess)
+          .font(.system(size: 16, weight: .medium, design: .rounded))
           .textFieldStyle(RoundedBorderTextFieldStyle())
           .padding(.top)
         
@@ -101,13 +122,14 @@ struct ContentView: View {
           }
         }) {
           Text(showPlayAgain ? "Play Again" : "Submit Guess")
+            .font(.system(size: 16, weight: .medium, design: .rounded))
             .frame(maxWidth: .infinity)
             .frame(height: 8)
         }
         .buttonStyle(GrowingButton())
         
         Text(rareAnimal)
-          .font(.title)
+          .font(.system(size: 20, weight: .medium, design: .rounded))
           .foregroundStyle(.red.gradient)
       }
       .padding()
@@ -130,7 +152,9 @@ struct ContentView: View {
   func resetGame() {
     guess = ""
     result = ""
+    pets = isLandAnimal ? landPets : seaPets
     currentPetIndex = Int.random(in: 0..<pets.count)
+    currentTitle = isLandAnimal ? "What kind of land animal is it?" : "What kind of sea animal is it?"
   }
   
   func checkGuess() {
