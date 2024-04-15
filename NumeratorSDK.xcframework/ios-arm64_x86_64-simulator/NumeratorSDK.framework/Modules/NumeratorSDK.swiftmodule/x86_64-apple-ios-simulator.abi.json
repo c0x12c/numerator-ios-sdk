@@ -8226,28 +8226,28 @@
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Polling\/PollingManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1000,
+      "offset": 1102,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Polling\/PollingManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1285,
+      "offset": 1387,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Polling\/PollingManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1398,
+      "offset": 1500,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Polling\/PollingManager.swift",
       "kind": "Dictionary",
-      "offset": 1718,
+      "offset": 1820,
       "length": 3,
       "value": "[]"
     },
@@ -8394,63 +8394,63 @@
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorFeatureFlagProvider.swift",
       "kind": "Dictionary",
-      "offset": 5882,
+      "offset": 5883,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorFeatureFlagProvider.swift",
       "kind": "Dictionary",
-      "offset": 6794,
+      "offset": 6795,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorFeatureFlagProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 6825,
+      "offset": 6826,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorFeatureFlagProvider.swift",
       "kind": "Dictionary",
-      "offset": 7983,
+      "offset": 7984,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorFeatureFlagProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 8014,
+      "offset": 8015,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorFeatureFlagProvider.swift",
       "kind": "Dictionary",
-      "offset": 9173,
+      "offset": 9174,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorFeatureFlagProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 9204,
+      "offset": 9205,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorFeatureFlagProvider.swift",
       "kind": "Dictionary",
-      "offset": 10354,
+      "offset": 10355,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorFeatureFlagProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 10385,
+      "offset": 10386,
       "length": 4,
       "value": "true"
     },
