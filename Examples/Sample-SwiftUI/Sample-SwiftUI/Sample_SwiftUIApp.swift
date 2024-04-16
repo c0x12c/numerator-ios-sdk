@@ -16,8 +16,8 @@ struct Sample_SwiftUIApp: App {
   
   init() {
     NumeratorFeatureFlagProvider.configure(
-      apiKey: "API_KEY",
-      pollingConfig: PollingModes.autoPoll(autoPollIntervalSeconds: 16)
+      apiKey: "NUM.92ccZehk596oY6Sk6W2L6Q==.gTlTQn6rHBPydazN+V/7FKslOVKWsSvIny/BkhMd9svb11k4n3WUK7UuTLNwGwVo",
+      pollingConfig: PollingModes.autoPoll(autoPollIntervalSeconds: 6)
     )
     NumeratorFeatureFlagProvider.shared.printToConsole(true)
   }

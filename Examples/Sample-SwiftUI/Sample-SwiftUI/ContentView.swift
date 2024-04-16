@@ -25,7 +25,7 @@ struct ContentView: View {
   
   @NumeratorFeatureFlag(
     key: "image_size",
-    defaultValue: 1,
+    defaultValue: 1000,
     flagProvider: NumeratorFeatureFlagProvider.shared
   ) var imageSizeFlag: Int
   
@@ -33,12 +33,14 @@ struct ContentView: View {
   @State private var guess = ""
   @State private var result = ""
   @State private var isWinGamge = false
+  @State private var isRareAnimal = false
   @State private var rareAnimal = ""
   @State private var pets = ["cat", "dog", "rabbit", "lion", "deer"]
-  @State private var currentPetIndex = Int.random(in: 0..<5)
   @State private var showPlayAgain = false
   
   @State private var isLoadingGame = true
+  
+  @StateObject var viewModel = ContentViewModel()
   
   var landPets = ["cat", "dog", "rabbit", "lion", "deer"]
   var seaPets = ["whale", "shark", "starfish", "penguin"]
@@ -47,6 +49,7 @@ struct ContentView: View {
     contentView
       .onReceive(NumeratorFeatureFlagProvider.shared.flagUpdatedPublisher) { _ in
         print("Feature flag is updated")
+        currentTitle = isLandAnimal ? "What kind of land animal is it?" : "What kind of sea animal is it?"
         pets = isLandAnimal ? landPets : seaPets
         isLoadingGame = false
       }
@@ -93,10 +96,10 @@ struct ContentView: View {
           .lineLimit(2)
           .foregroundColor(isLandAnimal ? .brown : .blue)
         
-        Image(pets[currentPetIndex])
+        Image(pets[viewModel.currentPetIndex])
           .resizable()
           .aspectRatio(contentMode: .fit)
-          .frame(height: imageSizeFlag == 1 ? 480 : CGFloat(imageSizeFlag))
+          .frame(height: imageSizeFlag == 1000 ? 480 : CGFloat(imageSizeFlag))
           .overlay(content: {
             overLayResult
               .opacity(result.isEmpty ? 0 : 1)
@@ -130,7 +133,8 @@ struct ContentView: View {
         
         Text(rareAnimal)
           .font(.system(size: 20, weight: .medium, design: .rounded))
-          .foregroundStyle(.red.gradient)
+          .foregroundStyle(isRareAnimal ? .red : .black)
+          .opacity(rareAnimal.isEmpty ? 0 : 1)
       }
       .padding()
     }
@@ -152,13 +156,14 @@ struct ContentView: View {
   func resetGame() {
     guess = ""
     result = ""
+    rareAnimal = ""
     pets = isLandAnimal ? landPets : seaPets
-    currentPetIndex = Int.random(in: 0..<pets.count)
+    viewModel.currentPetIndex = viewModel.randomPetIndex(pets: pets.count)
     currentTitle = isLandAnimal ? "What kind of land animal is it?" : "What kind of sea animal is it?"
   }
   
   func checkGuess() {
-    if guess.lowercased() == pets[currentPetIndex].lowercased() {
+    if guess.lowercased() == pets[viewModel.currentPetIndex].lowercased() {
       result = "Correct!"
       showPlayAgain = true
       isWinGamge = true
@@ -178,9 +183,13 @@ struct ContentView: View {
       defaultValue: "Not a rare animal",
       context: ["rare_animal": guessName.lowercased()]
     )
+    if stringValue == "This is a rare Animal" {
+      isRareAnimal = true
+    } else {
+      isRareAnimal = false
+    }
     rareAnimal = stringValue
   }
-  
 }
 
 
