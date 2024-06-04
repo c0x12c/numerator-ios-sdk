@@ -896,6 +896,27 @@
         "printedName": "NumeratorPollingTestDataSource",
         "children": [
           {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NumeratorPollingTestDataSource",
+                "printedName": "NumeratorSDK.NumeratorPollingTestDataSource",
+                "usr": "s:12NumeratorSDK0A21PollingTestDataSourceC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12NumeratorSDK0A21PollingTestDataSourceCACycfc",
+            "mangledName": "$s12NumeratorSDK0A21PollingTestDataSourceCACycfc",
+            "moduleName": "NumeratorSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
             "kind": "Function",
             "name": "flagVariation",
             "printedName": "flagVariation(key:)",
@@ -1078,8 +1099,7 @@
         "moduleName": "NumeratorSDK",
         "declAttributes": [
           "AccessControl"
-        ],
-        "hasMissingDesignatedInitializers": true
+        ]
       },
       {
         "kind": "Import",
@@ -5247,6 +5267,229 @@
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "flagUpdatedPublisher",
+            "printedName": "flagUpdatedPublisher",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PassthroughSubject",
+                "printedName": "Combine.PassthroughSubject<(), Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine18PassthroughSubjectC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NumeratorSDK0A10DataSourcePAAE20flagUpdatedPublisher7Combine18PassthroughSubjectCyyts5NeverOGvp",
+            "mangledName": "$s12NumeratorSDK0A10DataSourcePAAE20flagUpdatedPublisher7Combine18PassthroughSubjectCyyts5NeverOGvp",
+            "moduleName": "NumeratorSDK",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PassthroughSubject",
+                    "printedName": "Combine.PassthroughSubject<(), Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine18PassthroughSubjectC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NumeratorSDK0A10DataSourcePAAE20flagUpdatedPublisher7Combine18PassthroughSubjectCyyts5NeverOGvg",
+                "mangledName": "$s12NumeratorSDK0A10DataSourcePAAE20flagUpdatedPublisher7Combine18PassthroughSubjectCyyts5NeverOGvg",
+                "moduleName": "NumeratorSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : NumeratorSDK.NumeratorDataSource>",
+                "sugared_genericSig": "<Self where Self : NumeratorSDK.NumeratorDataSource>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "flagUpdatedErrorPublisher",
+            "printedName": "flagUpdatedErrorPublisher",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PassthroughSubject",
+                "printedName": "Combine.PassthroughSubject<Swift.Error, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine18PassthroughSubjectC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NumeratorSDK0A10DataSourcePAAE25flagUpdatedErrorPublisher7Combine18PassthroughSubjectCys0G0_ps5NeverOGvp",
+            "mangledName": "$s12NumeratorSDK0A10DataSourcePAAE25flagUpdatedErrorPublisher7Combine18PassthroughSubjectCys0G0_ps5NeverOGvp",
+            "moduleName": "NumeratorSDK",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PassthroughSubject",
+                    "printedName": "Combine.PassthroughSubject<Swift.Error, Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine18PassthroughSubjectC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NumeratorSDK0A10DataSourcePAAE25flagUpdatedErrorPublisher7Combine18PassthroughSubjectCys0G0_ps5NeverOGvg",
+                "mangledName": "$s12NumeratorSDK0A10DataSourcePAAE25flagUpdatedErrorPublisher7Combine18PassthroughSubjectCys0G0_ps5NeverOGvg",
+                "moduleName": "NumeratorSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : NumeratorSDK.NumeratorDataSource>",
+                "sugared_genericSig": "<Self where Self : NumeratorSDK.NumeratorDataSource>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "getContext",
+            "printedName": "getContext()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ContextProvider",
+                "printedName": "NumeratorSDK.ContextProvider",
+                "usr": "s:12NumeratorSDK15ContextProviderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NumeratorSDK0A10DataSourcePAAE10getContextAA0F8Provider_pyF",
+            "mangledName": "$s12NumeratorSDK0A10DataSourcePAAE10getContextAA0F8Provider_pyF",
+            "moduleName": "NumeratorSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NumeratorSDK.NumeratorDataSource>",
+            "sugared_genericSig": "<Self where Self : NumeratorSDK.NumeratorDataSource>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setContext",
+            "printedName": "setContext(context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ContextProvider",
+                "printedName": "NumeratorSDK.ContextProvider",
+                "usr": "s:12NumeratorSDK15ContextProviderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NumeratorSDK0A10DataSourcePAAE10setContext7contextyAA0F8Provider_p_tF",
+            "mangledName": "$s12NumeratorSDK0A10DataSourcePAAE10setContext7contextyAA0F8Provider_p_tF",
+            "moduleName": "NumeratorSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NumeratorSDK.NumeratorDataSource>",
+            "sugared_genericSig": "<Self where Self : NumeratorSDK.NumeratorDataSource>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startPolling",
+            "printedName": "startPolling()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NumeratorSDK0A10DataSourcePAAE12startPollingyyF",
+            "mangledName": "$s12NumeratorSDK0A10DataSourcePAAE12startPollingyyF",
+            "moduleName": "NumeratorSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NumeratorSDK.NumeratorDataSource>",
+            "sugared_genericSig": "<Self where Self : NumeratorSDK.NumeratorDataSource>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopPolling",
+            "printedName": "stopPolling()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NumeratorSDK0A10DataSourcePAAE11stopPollingyyF",
+            "mangledName": "$s12NumeratorSDK0A10DataSourcePAAE11stopPollingyyF",
+            "moduleName": "NumeratorSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NumeratorSDK.NumeratorDataSource>",
+            "sugared_genericSig": "<Self where Self : NumeratorSDK.NumeratorDataSource>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -5407,6 +5650,100 @@
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(apiKey:pollingConfig:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NumeratorFeatureFlagProvider",
+                "printedName": "NumeratorSDK.NumeratorFeatureFlagProvider",
+                "usr": "s:12NumeratorSDK0A19FeatureFlagProviderC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NumeratorPollingConfig",
+                "printedName": "NumeratorSDK.NumeratorPollingConfig",
+                "usr": "s:12NumeratorSDK0A13PollingConfigV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12NumeratorSDK0A19FeatureFlagProviderC6apiKey13pollingConfigACSS_AA0a7PollingI0Vtcfc",
+            "mangledName": "$s12NumeratorSDK0A19FeatureFlagProviderC6apiKey13pollingConfigACSS_AA0a7PollingI0Vtcfc",
+            "moduleName": "NumeratorSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(config:context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NumeratorFeatureFlagProvider",
+                "printedName": "NumeratorSDK.NumeratorFeatureFlagProvider",
+                "usr": "s:12NumeratorSDK0A19FeatureFlagProviderC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NumeratorConfig",
+                "printedName": "NumeratorSDK.NumeratorConfig",
+                "usr": "s:12NumeratorSDK0A6ConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ContextProvider",
+                "printedName": "NumeratorSDK.ContextProvider",
+                "hasDefaultArg": true,
+                "usr": "s:12NumeratorSDK15ContextProviderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12NumeratorSDK0A19FeatureFlagProviderC6config7contextAcA0A6ConfigV_AA07ContextE0_ptcfc",
+            "mangledName": "$s12NumeratorSDK0A19FeatureFlagProviderC6config7contextAcA0A6ConfigV_AA07ContextE0_ptcfc",
+            "moduleName": "NumeratorSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(dataSource:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NumeratorFeatureFlagProvider",
+                "printedName": "NumeratorSDK.NumeratorFeatureFlagProvider",
+                "usr": "s:12NumeratorSDK0A19FeatureFlagProviderC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NumeratorDataSource",
+                "printedName": "NumeratorSDK.NumeratorDataSource",
+                "usr": "s:12NumeratorSDK0A10DataSourceP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12NumeratorSDK0A19FeatureFlagProviderC10dataSourceAcA0a4DataG0_p_tcfc",
+            "mangledName": "$s12NumeratorSDK0A19FeatureFlagProviderC10dataSourceAcA0a4DataG0_p_tcfc",
+            "moduleName": "NumeratorSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
           },
           {
             "kind": "Function",
@@ -6257,8 +6594,7 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
-        ],
-        "hasMissingDesignatedInitializers": true
+        ]
       },
       {
         "kind": "Import",
@@ -6835,6 +7171,631 @@
         "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "NumeratorSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NumeratorTestDataSource",
+        "printedName": "NumeratorTestDataSource",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(pollingTestDataSource:serverTestDataSource:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NumeratorTestDataSource",
+                "printedName": "NumeratorSDK.NumeratorTestDataSource",
+                "usr": "s:12NumeratorSDK0A14TestDataSourceC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NumeratorPollingTestDataSource",
+                "printedName": "NumeratorSDK.NumeratorPollingTestDataSource",
+                "usr": "s:12NumeratorSDK0A21PollingTestDataSourceC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NumeratorServerTestDataSource",
+                "printedName": "NumeratorSDK.NumeratorServerTestDataSource",
+                "usr": "s:12NumeratorSDK0A20ServerTestDataSourceC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12NumeratorSDK0A14TestDataSourceC07pollingcdE006servercdE0AcA0a7PollingcdE0C_AA0a6ServercdE0Ctcfc",
+            "mangledName": "$s12NumeratorSDK0A14TestDataSourceC07pollingcdE006servercdE0AcA0a7PollingcdE0C_AA0a6ServercdE0Ctcfc",
+            "moduleName": "NumeratorSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "getFeatureFlags",
+            "printedName": "getFeatureFlags(page:size:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FeatureFlagListResponse",
+                "printedName": "NumeratorSDK.FeatureFlagListResponse",
+                "usr": "s:12NumeratorSDK23FeatureFlagListResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NumeratorSDK0A14TestDataSourceC15getFeatureFlags4page4sizeAA0G16FlagListResponseVSi_SitYaKF",
+            "mangledName": "$s12NumeratorSDK0A14TestDataSourceC15getFeatureFlags4page4sizeAA0G16FlagListResponseVSi_SitYaKF",
+            "moduleName": "NumeratorSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "featureFlagDetails",
+            "printedName": "featureFlagDetails(key:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FeatureFlag",
+                "printedName": "NumeratorSDK.FeatureFlag",
+                "usr": "s:12NumeratorSDK11FeatureFlagV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NumeratorSDK0A14TestDataSourceC18featureFlagDetails3keyAA07FeatureG0VSS_tYaKF",
+            "mangledName": "$s12NumeratorSDK0A14TestDataSourceC18featureFlagDetails3keyAA07FeatureG0VSS_tYaKF",
+            "moduleName": "NumeratorSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "flagValueByKey",
+            "printedName": "flagValueByKey(forKey:context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FeatureFlagVariationValue",
+                "printedName": "NumeratorSDK.FeatureFlagVariationValue",
+                "usr": "s:12NumeratorSDK25FeatureFlagVariationValueV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NumeratorSDK0A14TestDataSourceC14flagValueByKey03forI07contextAA020FeatureFlagVariationG0VSS_SDySSypGtYaKF",
+            "mangledName": "$s12NumeratorSDK0A14TestDataSourceC14flagValueByKey03forI07contextAA020FeatureFlagVariationG0VSS_SDySSypGtYaKF",
+            "moduleName": "NumeratorSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getIntFeatureFlag",
+            "printedName": "getIntFeatureFlag(key:defaultValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NumeratorSDK0A14TestDataSourceC17getIntFeatureFlag3key12defaultValueSiSS_SitF",
+            "mangledName": "$s12NumeratorSDK0A14TestDataSourceC17getIntFeatureFlag3key12defaultValueSiSS_SitF",
+            "moduleName": "NumeratorSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getIntFeatureFlagDetail",
+            "printedName": "getIntFeatureFlagDetail(key:defaultValue:context:useDefaultContext:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FlagEvaluationDetail",
+                "printedName": "NumeratorSDK.FlagEvaluationDetail<Swift.Int>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:12NumeratorSDK20FlagEvaluationDetailV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NumeratorSDK0A14TestDataSourceC23getIntFeatureFlagDetail3key12defaultValue7context17useDefaultContextAA0i10EvaluationJ0VySiGSS_SiSDySSypGSbtYaF",
+            "mangledName": "$s12NumeratorSDK0A14TestDataSourceC23getIntFeatureFlagDetail3key12defaultValue7context17useDefaultContextAA0i10EvaluationJ0VySiGSS_SiSDySSypGSbtYaF",
+            "moduleName": "NumeratorSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getDoubleFeatureFlag",
+            "printedName": "getDoubleFeatureFlag(key:defaultValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NumeratorSDK0A14TestDataSourceC20getDoubleFeatureFlag3key12defaultValueSdSS_SdtF",
+            "mangledName": "$s12NumeratorSDK0A14TestDataSourceC20getDoubleFeatureFlag3key12defaultValueSdSS_SdtF",
+            "moduleName": "NumeratorSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getDoubleFeatureFlagDetail",
+            "printedName": "getDoubleFeatureFlagDetail(key:defaultValue:context:useDefaultContext:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FlagEvaluationDetail",
+                "printedName": "NumeratorSDK.FlagEvaluationDetail<Swift.Double>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:12NumeratorSDK20FlagEvaluationDetailV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NumeratorSDK0A14TestDataSourceC26getDoubleFeatureFlagDetail3key12defaultValue7context17useDefaultContextAA0i10EvaluationJ0VySdGSS_SdSDySSypGSbtYaF",
+            "mangledName": "$s12NumeratorSDK0A14TestDataSourceC26getDoubleFeatureFlagDetail3key12defaultValue7context17useDefaultContextAA0i10EvaluationJ0VySdGSS_SdSDySSypGSbtYaF",
+            "moduleName": "NumeratorSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getBoolFeatureFlag",
+            "printedName": "getBoolFeatureFlag(key:defaultValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NumeratorSDK0A14TestDataSourceC18getBoolFeatureFlag3key12defaultValueSbSS_SbtF",
+            "mangledName": "$s12NumeratorSDK0A14TestDataSourceC18getBoolFeatureFlag3key12defaultValueSbSS_SbtF",
+            "moduleName": "NumeratorSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getBoolFeatureFlagDetail",
+            "printedName": "getBoolFeatureFlagDetail(key:defaultValue:context:useDefaultContext:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FlagEvaluationDetail",
+                "printedName": "NumeratorSDK.FlagEvaluationDetail<Swift.Bool>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:12NumeratorSDK20FlagEvaluationDetailV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NumeratorSDK0A14TestDataSourceC24getBoolFeatureFlagDetail3key12defaultValue7context17useDefaultContextAA0i10EvaluationJ0VySbGSS_SbSDySSypGSbtYaF",
+            "mangledName": "$s12NumeratorSDK0A14TestDataSourceC24getBoolFeatureFlagDetail3key12defaultValue7context17useDefaultContextAA0i10EvaluationJ0VySbGSS_SbSDySSypGSbtYaF",
+            "moduleName": "NumeratorSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getStringFeatureFlag",
+            "printedName": "getStringFeatureFlag(key:defaultValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NumeratorSDK0A14TestDataSourceC20getStringFeatureFlag3key12defaultValueS2S_SStF",
+            "mangledName": "$s12NumeratorSDK0A14TestDataSourceC20getStringFeatureFlag3key12defaultValueS2S_SStF",
+            "moduleName": "NumeratorSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getStringFeatureFlagDetail",
+            "printedName": "getStringFeatureFlagDetail(key:defaultValue:context:useDefaultContext:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FlagEvaluationDetail",
+                "printedName": "NumeratorSDK.FlagEvaluationDetail<Swift.String>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:12NumeratorSDK20FlagEvaluationDetailV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NumeratorSDK0A14TestDataSourceC26getStringFeatureFlagDetail3key12defaultValue7context17useDefaultContextAA0i10EvaluationJ0VySSGSS_SSSDySSypGSbtYaF",
+            "mangledName": "$s12NumeratorSDK0A14TestDataSourceC26getStringFeatureFlagDetail3key12defaultValue7context17useDefaultContextAA0i10EvaluationJ0VySSGSS_SSSDySSypGSbtYaF",
+            "moduleName": "NumeratorSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getFeatureFlags",
+            "printedName": "getFeatureFlags()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[NumeratorSDK.FeatureFlagVariationValue]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FeatureFlagVariationValue",
+                    "printedName": "NumeratorSDK.FeatureFlagVariationValue",
+                    "usr": "s:12NumeratorSDK25FeatureFlagVariationValueV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NumeratorSDK0A14TestDataSourceC15getFeatureFlagsSayAA0G18FlagVariationValueVGyF",
+            "mangledName": "$s12NumeratorSDK0A14TestDataSourceC15getFeatureFlagsSayAA0G18FlagVariationValueVGyF",
+            "moduleName": "NumeratorSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getFeatureFlagMap",
+            "printedName": "getFeatureFlagMap()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : NumeratorSDK.FeatureFlagVariationValue]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FeatureFlagVariationValue",
+                    "printedName": "NumeratorSDK.FeatureFlagVariationValue",
+                    "usr": "s:12NumeratorSDK25FeatureFlagVariationValueV"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NumeratorSDK0A14TestDataSourceC17getFeatureFlagMapSDySSAA0gH14VariationValueVGyF",
+            "mangledName": "$s12NumeratorSDK0A14TestDataSourceC17getFeatureFlagMapSDySSAA0gH14VariationValueVGyF",
+            "moduleName": "NumeratorSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:12NumeratorSDK0A14TestDataSourceC",
+        "mangledName": "$s12NumeratorSDK0A14TestDataSourceC",
+        "moduleName": "NumeratorSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "NumeratorDataSource",
+            "printedName": "NumeratorDataSource",
+            "usr": "s:12NumeratorSDK0A10DataSourceP",
+            "mangledName": "$s12NumeratorSDK0A10DataSourceP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -9977,21 +10938,21 @@
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/DataSources\/TestData\/NumeratorPollingTestDataSource.swift",
       "kind": "Dictionary",
-      "offset": 124,
+      "offset": 146,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/DataSources\/TestData\/NumeratorPollingTestDataSource.swift",
       "kind": "StringLiteral",
-      "offset": 1423,
+      "offset": 1445,
       "length": 28,
       "value": "\"Unsupported new value type\""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/DataSources\/TestData\/NumeratorPollingTestDataSource.swift",
       "kind": "Dictionary",
-      "offset": 1540,
+      "offset": 1562,
       "length": 3,
       "value": "[]"
     },
@@ -10894,63 +11855,63 @@
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorFeatureFlagProvider.swift",
       "kind": "Dictionary",
-      "offset": 5578,
+      "offset": 5599,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorFeatureFlagProvider.swift",
       "kind": "Dictionary",
-      "offset": 8963,
+      "offset": 8984,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorFeatureFlagProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 8994,
+      "offset": 9015,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorFeatureFlagProvider.swift",
       "kind": "Dictionary",
-      "offset": 9900,
+      "offset": 9921,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorFeatureFlagProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 9931,
+      "offset": 9952,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorFeatureFlagProvider.swift",
       "kind": "Dictionary",
-      "offset": 10841,
+      "offset": 10862,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorFeatureFlagProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 10872,
+      "offset": 10893,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorFeatureFlagProvider.swift",
       "kind": "Dictionary",
-      "offset": 11773,
+      "offset": 11794,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorFeatureFlagProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 11804,
+      "offset": 11825,
       "length": 4,
       "value": "true"
     },
