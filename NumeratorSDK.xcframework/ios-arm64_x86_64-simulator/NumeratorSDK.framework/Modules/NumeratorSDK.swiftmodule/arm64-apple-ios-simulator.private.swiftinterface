@@ -40,12 +40,22 @@ public class FeatureFlagCollection : Swift.Codable {
   public init(flags: [NumeratorSDK.FeatureFlagVariationValue])
   required public init(from decoder: any Swift.Decoder) throws
   public func getFlag(key: Swift.String) -> NumeratorSDK.FeatureFlagVariationValue?
+  public func getFeatureFlagMap() -> [Swift.String : NumeratorSDK.FeatureFlagVariationValue]
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
 }
 public struct NumeratorPollingConfig {
   public var pollImmediate: Swift.Bool
   public var pollingInterval: Foundation.TimeInterval
+}
+@_hasMissingDesignatedInitializers public class NumeratorPollingTestDataSource {
+  public func flagVariation(key: Swift.String) -> NumeratorSDK.FeatureFlagVariationValue?
+  public func getFlags() -> [NumeratorSDK.FeatureFlagVariationValue]
+  public func getFeatureFlagsMap() -> [Swift.String : NumeratorSDK.FeatureFlagVariationValue]
+  public func updateFlagVariation(key: Swift.String, newValue: Any)
+  public func clearFlags()
+  public func removeFlag(key: Swift.String)
+  @objc deinit
 }
 public struct VariationValue : Swift.Codable {
   public let booleanValue: Swift.Bool?
@@ -89,6 +99,29 @@ public enum NumeratorInfo {
 @_hasMissingDesignatedInitializers final public class NumeratorClient {
   @objc deinit
 }
+public class NumeratorServerTestDataSource {
+  public init(defaultContext: [Swift.String : Any] = [:])
+  public func setContext(key: Swift.String, value: Any)
+  public func stringFlagEvaluationDetail(key: Swift.String, defaultValue: Swift.String, context: [Swift.String : Any]? = nil, useDefaultContext: Swift.Bool = true) -> NumeratorSDK.FlagEvaluationDetail<Swift.String>
+  public func booleanFlagEvaluationDetail(key: Swift.String, defaultValue: Swift.Bool, context: [Swift.String : Any]? = nil, useDefaultContext: Swift.Bool = true) -> NumeratorSDK.FlagEvaluationDetail<Swift.Bool>
+  public func longFlagEvaluationDetail(key: Swift.String, defaultValue: Swift.Int, context: [Swift.String : Any]? = nil, useDefaultContext: Swift.Bool = true) -> NumeratorSDK.FlagEvaluationDetail<Swift.Int>
+  public func doubleFlagEvaluationDetail(key: Swift.String, defaultValue: Swift.Double, context: [Swift.String : Any]? = nil, useDefaultContext: Swift.Bool = true) -> NumeratorSDK.FlagEvaluationDetail<Swift.Double>
+  public func updateFlag<T>(flag: NumeratorSDK.FlagEvaluationDetail<T>, context: [Swift.String : Any]? = nil, useDefaultContext: Swift.Bool = true)
+  public func clearFlags()
+  public var underlyingGetFeatureFlag: NumeratorSDK.FeatureFlagListResponse?
+  #if compiler(>=5.3) && $AsyncAwait
+  public func getFeatureFlags(page: Swift.Int, size: Swift.Int) async throws -> NumeratorSDK.FeatureFlagListResponse
+  #endif
+  public var underlyingFeatureFlagDetails: NumeratorSDK.FeatureFlag?
+  #if compiler(>=5.3) && $AsyncAwait
+  public func featureFlagDetails(key: Swift.String) async throws -> NumeratorSDK.FeatureFlag
+  #endif
+  public var underlyingFlagValueByKey: NumeratorSDK.FeatureFlagVariationValue?
+  #if compiler(>=5.3) && $AsyncAwait
+  public func flagValueByKey(forKey: NumeratorSDK.NumeratorFlagKey, context: [Swift.String : Any]) async throws -> NumeratorSDK.FeatureFlagVariationValue
+  #endif
+  @objc deinit
+}
 public struct NumeratorAPIError : NumeratorSDK.DesignatedError {
   public var message: Swift.String?
   public var httpStatus: Swift.Int?
@@ -104,6 +137,41 @@ extension NumeratorSDK.NumeratorAPIError : Foundation.LocalizedError, Swift.Cust
     get
   }
 }
+public protocol NumeratorDataSource {
+  var flagUpdatedPublisher: NumeratorSDK.FlagUpdatedPublisher { get }
+  var flagUpdatedErrorPublisher: NumeratorSDK.FlagUpdatedErrorPublisher { get }
+  func getContext() -> any NumeratorSDK.ContextProvider
+  func setContext(context: any NumeratorSDK.ContextProvider)
+  func startPolling()
+  func stopPolling()
+  #if compiler(>=5.3) && $AsyncAwait
+  func getFeatureFlags(page: Swift.Int, size: Swift.Int) async throws -> NumeratorSDK.FeatureFlagListResponse
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func featureFlagDetails(key: Swift.String) async throws -> NumeratorSDK.FeatureFlag
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func flagValueByKey(forKey: NumeratorSDK.NumeratorFlagKey, context: [Swift.String : Any]) async throws -> NumeratorSDK.FeatureFlagVariationValue
+  #endif
+  func getIntFeatureFlag(key: Swift.String, defaultValue: Swift.Int) -> Swift.Int
+  #if compiler(>=5.3) && $AsyncAwait
+  func getIntFeatureFlagDetail(key: Swift.String, defaultValue: Swift.Int, context: [Swift.String : Any], useDefaultContext: Swift.Bool) async -> NumeratorSDK.FlagEvaluationDetail<Swift.Int>
+  #endif
+  func getDoubleFeatureFlag(key: Swift.String, defaultValue: Swift.Double) -> Swift.Double
+  #if compiler(>=5.3) && $AsyncAwait
+  func getDoubleFeatureFlagDetail(key: Swift.String, defaultValue: Swift.Double, context: [Swift.String : Any], useDefaultContext: Swift.Bool) async -> NumeratorSDK.FlagEvaluationDetail<Swift.Double>
+  #endif
+  func getBoolFeatureFlag(key: Swift.String, defaultValue: Swift.Bool) -> Swift.Bool
+  #if compiler(>=5.3) && $AsyncAwait
+  func getBoolFeatureFlagDetail(key: Swift.String, defaultValue: Swift.Bool, context: [Swift.String : Any], useDefaultContext: Swift.Bool) async -> NumeratorSDK.FlagEvaluationDetail<Swift.Bool>
+  #endif
+  func getStringFeatureFlag(key: Swift.String, defaultValue: Swift.String) -> Swift.String
+  #if compiler(>=5.3) && $AsyncAwait
+  func getStringFeatureFlagDetail(key: Swift.String, defaultValue: Swift.String, context: [Swift.String : Any], useDefaultContext: Swift.Bool) async -> NumeratorSDK.FlagEvaluationDetail<Swift.String>
+  #endif
+  func getFeatureFlags() -> [NumeratorSDK.FeatureFlagVariationValue]
+  func getFeatureFlagMap() -> [Swift.String : NumeratorSDK.FeatureFlagVariationValue]
+}
 @_hasMissingDesignatedInitializers public class NumeratorFeatureFlagProvider {
   public static var shared: NumeratorSDK.NumeratorFeatureFlagProvider! {
     get
@@ -112,6 +180,7 @@ extension NumeratorSDK.NumeratorAPIError : Foundation.LocalizedError, Swift.Cust
   public static func configure(config: NumeratorSDK.NumeratorConfig, context: any NumeratorSDK.ContextProvider = DefaultContextProvider())
   public func getContext() -> any NumeratorSDK.ContextProvider
   public func setContext(context: any NumeratorSDK.ContextProvider)
+  public func setDefaultBackupSource(source: [Swift.String : NumeratorSDK.FeatureFlagVariationValue])
   public func version() -> Swift.String
   public func startPolling()
   public func stopPolling()
@@ -131,17 +200,21 @@ extension NumeratorSDK.NumeratorAPIError : Foundation.LocalizedError, Swift.Cust
   #if compiler(>=5.3) && $AsyncAwait
   public func flagValueByKey(forKey: NumeratorSDK.NumeratorFlagKey, context: [Swift.String : Any] = [:]) async throws -> NumeratorSDK.FeatureFlagVariationValue
   #endif
+  public func getIntFeatureFlag(key: Swift.String, defaultValue: Swift.Int) -> Swift.Int
+  public func getBoolFeatureFlag(key: Swift.String, defaultValue: Swift.Bool) -> Swift.Bool
+  public func getStringFeatureFlag(key: Swift.String, defaultValue: Swift.String) -> Swift.String
+  public func getDoubleFeatureFlag(key: Swift.String, defaultValue: Swift.Double) -> Swift.Double
   #if compiler(>=5.3) && $AsyncAwait
-  public func getBoolFeatureFlag(key: Swift.String, defaultValue: Swift.Bool, context: [Swift.String : Any] = [:], useDefaultContext: Swift.Bool = true) async -> Swift.Bool
+  public func getBoolFeatureFlag(key: Swift.String, defaultValue: Swift.Bool, context: [Swift.String : Any] = [:], useDefaultContext: Swift.Bool = true) async -> NumeratorSDK.FlagEvaluationDetail<Swift.Bool>
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  public func getStringFeatureFlag(key: Swift.String, defaultValue: Swift.String, context: [Swift.String : Any] = [:], useDefaultContext: Swift.Bool = true) async -> Swift.String
+  public func getStringFeatureFlag(key: Swift.String, defaultValue: Swift.String, context: [Swift.String : Any] = [:], useDefaultContext: Swift.Bool = true) async -> NumeratorSDK.FlagEvaluationDetail<Swift.String>
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  public func getDoubleFeatureFlag(key: Swift.String, defaultValue: Swift.Double, context: [Swift.String : Any] = [:], useDefaultContext: Swift.Bool = true) async -> Swift.Double
+  public func getDoubleFeatureFlag(key: Swift.String, defaultValue: Swift.Double, context: [Swift.String : Any] = [:], useDefaultContext: Swift.Bool = true) async -> NumeratorSDK.FlagEvaluationDetail<Swift.Double>
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  public func getIntFeatureFlag(key: Swift.String, defaultValue: Swift.Int, context: [Swift.String : Any] = [:], useDefaultContext: Swift.Bool = true) async -> Swift.Int
+  public func getIntFeatureFlag(key: Swift.String, defaultValue: Swift.Int, context: [Swift.String : Any] = [:], useDefaultContext: Swift.Bool = true) async -> NumeratorSDK.FlagEvaluationDetail<Swift.Int>
   #endif
   @objc deinit
 }
