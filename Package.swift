@@ -13,8 +13,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "NumeratorSDK",
-            url: "https://github.com/numerator-io/sdk-ios/releases/download/0.0.4/NumeratorSDK.xcframework.zip",
-            checksum: "62ecd250923ed0d9f4fa889bcd3dbbb5c86e5108bb7b3723f24cee0cf5b3897c"
+            url: "https://github.com/numerator-io/sdk-ios/releases/download/0.0.5/NumeratorSDK.xcframework.zip",
+            checksum: "f1a171d7696d9f35ef1373abdfd73fe84252ff16459fd0d95e75e576eafbdbd0"
         )
     ]
 )
