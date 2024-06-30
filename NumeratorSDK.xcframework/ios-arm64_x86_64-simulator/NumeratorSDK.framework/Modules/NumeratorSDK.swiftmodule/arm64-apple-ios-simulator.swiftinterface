@@ -141,6 +141,8 @@ extension NumeratorSDK.NumeratorAPIError : Foundation.LocalizedError, Swift.Cust
 public protocol NumeratorDataSource {
   var flagUpdatedPublisher: NumeratorSDK.FlagUpdatedPublisher { get }
   var flagUpdatedErrorPublisher: NumeratorSDK.FlagUpdatedErrorPublisher { get }
+  func getProperties() -> (any NumeratorSDK.ContextProvider)?
+  func setProperties(properties: any NumeratorSDK.ContextProvider)
   func getContext() -> any NumeratorSDK.ContextProvider
   func setContext(context: any NumeratorSDK.ContextProvider)
   func startPolling()
@@ -182,6 +184,8 @@ extension NumeratorSDK.NumeratorDataSource {
   }
   public func getContext() -> any NumeratorSDK.ContextProvider
   public func setContext(context: any NumeratorSDK.ContextProvider)
+  public func getProperties() -> (any NumeratorSDK.ContextProvider)?
+  public func setProperties(properties: any NumeratorSDK.ContextProvider)
   public func startPolling()
   public func stopPolling()
 }
@@ -194,6 +198,8 @@ public class NumeratorFeatureFlagProvider {
   public init(apiKey: Swift.String, pollingConfig: NumeratorSDK.NumeratorPollingConfig)
   public init(config: NumeratorSDK.NumeratorConfig, context: any NumeratorSDK.ContextProvider = DefaultContextProvider())
   public init(dataSource: any NumeratorSDK.NumeratorDataSource)
+  public func getProperties() -> (any NumeratorSDK.ContextProvider)?
+  public func setProperties(properties: any NumeratorSDK.ContextProvider)
   public func getContext() -> any NumeratorSDK.ContextProvider
   public func setContext(context: any NumeratorSDK.ContextProvider)
   public func setDefaultBackupSource(source: [Swift.String : NumeratorSDK.FeatureFlagVariationValue])
@@ -325,6 +331,8 @@ public enum FlagStatusType : Swift.String, Swift.Codable {
 extension NumeratorSDK.NumeratorClient {
   final public func getContextProvider() -> any NumeratorSDK.ContextProvider
   final public func setContextProvider(context: any NumeratorSDK.ContextProvider)
+  final public func getProperties() -> (any NumeratorSDK.ContextProvider)?
+  final public func setProperties(properties: any NumeratorSDK.ContextProvider)
   #if compiler(>=5.3) && $AsyncAwait
   final public func featureFlags(page: Swift.Int = 0, size: Swift.Int = 20) async throws -> NumeratorSDK.FeatureFlagListResponse
   #endif

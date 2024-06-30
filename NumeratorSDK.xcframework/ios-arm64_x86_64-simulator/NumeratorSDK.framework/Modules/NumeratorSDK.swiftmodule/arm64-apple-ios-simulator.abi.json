@@ -2471,6 +2471,65 @@
           },
           {
             "kind": "Function",
+            "name": "getProperties",
+            "printedName": "getProperties()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NumeratorSDK.ContextProvider?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ContextProvider",
+                    "printedName": "NumeratorSDK.ContextProvider",
+                    "usr": "s:12NumeratorSDK15ContextProviderP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NumeratorSDK0A6ClientC13getPropertiesAA15ContextProvider_pSgyF",
+            "mangledName": "$s12NumeratorSDK0A6ClientC13getPropertiesAA15ContextProvider_pSgyF",
+            "moduleName": "NumeratorSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setProperties",
+            "printedName": "setProperties(properties:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ContextProvider",
+                "printedName": "NumeratorSDK.ContextProvider",
+                "usr": "s:12NumeratorSDK15ContextProviderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NumeratorSDK0A6ClientC13setProperties10propertiesyAA15ContextProvider_p_tF",
+            "mangledName": "$s12NumeratorSDK0A6ClientC13setProperties10propertiesyAA15ContextProvider_p_tF",
+            "moduleName": "NumeratorSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "featureFlags",
             "printedName": "featureFlags(page:size:)",
             "children": [
@@ -4597,6 +4656,63 @@
           },
           {
             "kind": "Function",
+            "name": "getProperties",
+            "printedName": "getProperties()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NumeratorSDK.ContextProvider?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ContextProvider",
+                    "printedName": "NumeratorSDK.ContextProvider",
+                    "usr": "s:12NumeratorSDK15ContextProviderP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NumeratorSDK0A10DataSourceP13getPropertiesAA15ContextProvider_pSgyF",
+            "mangledName": "$s12NumeratorSDK0A10DataSourceP13getPropertiesAA15ContextProvider_pSgyF",
+            "moduleName": "NumeratorSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NumeratorSDK.NumeratorDataSource>",
+            "sugared_genericSig": "<Self where Self : NumeratorSDK.NumeratorDataSource>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setProperties",
+            "printedName": "setProperties(properties:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ContextProvider",
+                "printedName": "NumeratorSDK.ContextProvider",
+                "usr": "s:12NumeratorSDK15ContextProviderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NumeratorSDK0A10DataSourceP13setProperties10propertiesyAA15ContextProvider_p_tF",
+            "mangledName": "$s12NumeratorSDK0A10DataSourceP13setProperties10propertiesyAA15ContextProvider_p_tF",
+            "moduleName": "NumeratorSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NumeratorSDK.NumeratorDataSource>",
+            "sugared_genericSig": "<Self where Self : NumeratorSDK.NumeratorDataSource>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getContext",
             "printedName": "getContext()",
             "children": [
@@ -5453,6 +5569,61 @@
           },
           {
             "kind": "Function",
+            "name": "getProperties",
+            "printedName": "getProperties()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NumeratorSDK.ContextProvider?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ContextProvider",
+                    "printedName": "NumeratorSDK.ContextProvider",
+                    "usr": "s:12NumeratorSDK15ContextProviderP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NumeratorSDK0A10DataSourcePAAE13getPropertiesAA15ContextProvider_pSgyF",
+            "mangledName": "$s12NumeratorSDK0A10DataSourcePAAE13getPropertiesAA15ContextProvider_pSgyF",
+            "moduleName": "NumeratorSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NumeratorSDK.NumeratorDataSource>",
+            "sugared_genericSig": "<Self where Self : NumeratorSDK.NumeratorDataSource>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setProperties",
+            "printedName": "setProperties(properties:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ContextProvider",
+                "printedName": "NumeratorSDK.ContextProvider",
+                "usr": "s:12NumeratorSDK15ContextProviderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NumeratorSDK0A10DataSourcePAAE13setProperties10propertiesyAA15ContextProvider_p_tF",
+            "mangledName": "$s12NumeratorSDK0A10DataSourcePAAE13setProperties10propertiesyAA15ContextProvider_p_tF",
+            "moduleName": "NumeratorSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NumeratorSDK.NumeratorDataSource>",
+            "sugared_genericSig": "<Self where Self : NumeratorSDK.NumeratorDataSource>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "startPolling",
             "printedName": "startPolling()",
             "children": [
@@ -5744,6 +5915,61 @@
               "AccessControl"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "getProperties",
+            "printedName": "getProperties()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NumeratorSDK.ContextProvider?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ContextProvider",
+                    "printedName": "NumeratorSDK.ContextProvider",
+                    "usr": "s:12NumeratorSDK15ContextProviderP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NumeratorSDK0A19FeatureFlagProviderC13getPropertiesAA07ContextE0_pSgyF",
+            "mangledName": "$s12NumeratorSDK0A19FeatureFlagProviderC13getPropertiesAA07ContextE0_pSgyF",
+            "moduleName": "NumeratorSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setProperties",
+            "printedName": "setProperties(properties:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ContextProvider",
+                "printedName": "NumeratorSDK.ContextProvider",
+                "usr": "s:12NumeratorSDK15ContextProviderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NumeratorSDK0A19FeatureFlagProviderC13setProperties10propertiesyAA07ContextE0_p_tF",
+            "mangledName": "$s12NumeratorSDK0A19FeatureFlagProviderC13setProperties10propertiesyAA07ContextE0_p_tF",
+            "moduleName": "NumeratorSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -11071,77 +11297,84 @@
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NetworkData\/NetworkExtensions\/FeatureFlagRoutes.swift",
       "kind": "StringLiteral",
-      "offset": 447,
+      "offset": 475,
       "length": 34,
       "value": "\"\/api\/v1\/sdk\/feature-flag\/listing\""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NetworkData\/NetworkExtensions\/FeatureFlagRoutes.swift",
       "kind": "StringLiteral",
-      "offset": 515,
+      "offset": 543,
       "length": 40,
       "value": "\"\/api\/v1\/sdk\/feature-flag\/detail-by-key\""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NetworkData\/NetworkExtensions\/FeatureFlagRoutes.swift",
       "kind": "StringLiteral",
-      "offset": 588,
+      "offset": 616,
       "length": 33,
       "value": "\"\/api\/v1\/sdk\/feature-flag\/by-key\""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NetworkData\/NetworkExtensions\/FeatureFlagRoutes.swift",
       "kind": "StringLiteral",
-      "offset": 652,
+      "offset": 680,
       "length": 34,
       "value": "\"\/api\/v1\/sdk\/feature-flag\/polling\""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NetworkData\/NetworkExtensions\/FeatureFlagRoutes.swift",
       "kind": "StringLiteral",
-      "offset": 1440,
+      "offset": 1478,
       "length": 6,
       "value": "\"page\""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NetworkData\/NetworkExtensions\/FeatureFlagRoutes.swift",
       "kind": "StringLiteral",
-      "offset": 1462,
+      "offset": 1500,
       "length": 6,
       "value": "\"size\""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NetworkData\/NetworkExtensions\/FeatureFlagRoutes.swift",
       "kind": "StringLiteral",
-      "offset": 1542,
+      "offset": 1587,
       "length": 5,
       "value": "\"key\""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NetworkData\/NetworkExtensions\/FeatureFlagRoutes.swift",
       "kind": "StringLiteral",
-      "offset": 1632,
+      "offset": 1684,
       "length": 5,
       "value": "\"key\""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NetworkData\/NetworkExtensions\/FeatureFlagRoutes.swift",
       "kind": "StringLiteral",
-      "offset": 1656,
+      "offset": 1708,
       "length": 9,
       "value": "\"context\""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NetworkData\/NetworkExtensions\/FeatureFlagRoutes.swift",
       "kind": "StringLiteral",
-      "offset": 1739,
+      "offset": 1830,
       "length": 9,
       "value": "\"context\""
+    },
+    {
+      "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NetworkData\/NetworkExtensions\/FeatureFlagRoutes.swift",
+      "kind": "StringLiteral",
+      "offset": 1919,
+      "length": 12,
+      "value": "\"properties\""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NetworkData\/NetworkExtensions\/NumeratorNetwork+FeatureFlagAPI.swift",
       "kind": "Array",
-      "offset": 603,
+      "offset": 655,
       "length": 2,
       "value": "[]"
     },
@@ -11170,7 +11403,7 @@
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Networks\/NumeratorNetwork.swift",
       "kind": "StringLiteral",
       "offset": 943,
-      "length": 60,
+      "length": 122,
       "value": "\"Request: \""
     },
     {
@@ -11191,202 +11424,216 @@
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Networks\/NumeratorNetwork.swift",
       "kind": "StringLiteral",
       "offset": 1002,
+      "length": 1,
+      "value": "\"\n httpBody:\""
+    },
+    {
+      "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Networks\/NumeratorNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 1061,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Networks\/NumeratorNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 1312,
+      "offset": 1064,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Networks\/NumeratorNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 1374,
       "length": 25,
       "value": "\"Request error: \""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Networks\/NumeratorNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 1336,
+      "offset": 1398,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Networks\/NumeratorNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 1596,
+      "offset": 1658,
       "length": 17,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Networks\/NumeratorNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 1611,
+      "offset": 1673,
       "length": 5,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Networks\/NumeratorNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 1616,
+      "offset": 1678,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Networks\/NumeratorNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 1644,
+      "offset": 1706,
       "length": 104,
       "value": "\"[Response]: \nstatus-code:\""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Networks\/NumeratorNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 1684,
+      "offset": 1746,
       "length": 1,
       "value": "\" \nresponse:\""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Networks\/NumeratorNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 1747,
+      "offset": 1809,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Networks\/NumeratorNetwork.swift",
       "kind": "IntegerLiteral",
-      "offset": 1758,
+      "offset": 1820,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Networks\/NumeratorNetwork.swift",
       "kind": "IntegerLiteral",
-      "offset": 1764,
+      "offset": 1826,
       "length": 3,
       "value": "299"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Networks\/NumeratorNetwork.swift",
       "kind": "IntegerLiteral",
-      "offset": 1792,
+      "offset": 1854,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Networks\/NumeratorNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 1875,
+      "offset": 1937,
       "length": 24,
       "value": "\"Response body is empty\""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Networks\/NumeratorNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 2030,
+      "offset": 2092,
       "length": 20,
       "value": "\"API key is invalid\""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Networks\/NumeratorNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 2180,
+      "offset": 2242,
       "length": 14,
       "value": "\"Not modified\""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Networks\/NumeratorNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 2350,
+      "offset": 2412,
       "length": 6,
       "value": "\"Etag\""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Networks\/NumeratorNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 3234,
+      "offset": 3296,
       "length": 26,
       "value": "\"Failed to decode object.\""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Networks\/NumeratorNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 3768,
+      "offset": 3830,
       "length": 45,
       "value": "\"Data corrupted: \""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Networks\/NumeratorNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 3812,
+      "offset": 3874,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Networks\/NumeratorNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 3884,
+      "offset": 3946,
       "length": 65,
       "value": "\"Key '\""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Networks\/NumeratorNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 3908,
+      "offset": 3970,
       "length": 41,
       "value": "\"' not found: \""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Networks\/NumeratorNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 3948,
+      "offset": 4010,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Networks\/NumeratorNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 4022,
+      "offset": 4084,
       "length": 52,
       "value": "\"Type mismatch: \""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Networks\/NumeratorNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 4045,
+      "offset": 4107,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Networks\/NumeratorNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 4073,
+      "offset": 4135,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Networks\/NumeratorNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 4148,
+      "offset": 4210,
       "length": 54,
       "value": "\"Value not found: \""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Networks\/NumeratorNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 4173,
+      "offset": 4235,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Networks\/NumeratorNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 4201,
+      "offset": 4263,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Networks\/NumeratorNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 4250,
+      "offset": 4312,
       "length": 28,
       "value": "\"An unknown error occurred.\""
     },
@@ -11680,28 +11927,28 @@
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Polling\/PollingManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 876,
+      "offset": 1021,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Polling\/PollingManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1102,
+      "offset": 1247,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Polling\/PollingManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1387,
+      "offset": 1532,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/Polling\/PollingManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1500,
+      "offset": 1645,
       "length": 4,
       "value": "true"
     },
@@ -11855,63 +12102,63 @@
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorFeatureFlagProvider.swift",
       "kind": "Dictionary",
-      "offset": 5599,
+      "offset": 5808,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorFeatureFlagProvider.swift",
       "kind": "Dictionary",
-      "offset": 8984,
+      "offset": 9193,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorFeatureFlagProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 9015,
+      "offset": 9224,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorFeatureFlagProvider.swift",
       "kind": "Dictionary",
-      "offset": 9921,
+      "offset": 10130,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorFeatureFlagProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 9952,
+      "offset": 10161,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorFeatureFlagProvider.swift",
       "kind": "Dictionary",
-      "offset": 10862,
+      "offset": 11071,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorFeatureFlagProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 10893,
+      "offset": 11102,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorFeatureFlagProvider.swift",
       "kind": "Dictionary",
-      "offset": 11794,
+      "offset": 12003,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorFeatureFlagProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 11825,
+      "offset": 12034,
       "length": 4,
       "value": "true"
     },
@@ -12051,84 +12298,84 @@
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorClient+Variation.swift",
       "kind": "IntegerLiteral",
-      "offset": 643,
+      "offset": 823,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorClient+Variation.swift",
       "kind": "IntegerLiteral",
-      "offset": 658,
+      "offset": 838,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorClient+Variation.swift",
       "kind": "Dictionary",
-      "offset": 1730,
+      "offset": 1910,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorClient+Variation.swift",
       "kind": "Dictionary",
-      "offset": 2468,
+      "offset": 2648,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorClient+Variation.swift",
       "kind": "Dictionary",
-      "offset": 3252,
+      "offset": 3432,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorClient+Variation.swift",
       "kind": "Dictionary",
-      "offset": 4054,
+      "offset": 4234,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorClient+Variation.swift",
       "kind": "Dictionary",
-      "offset": 4845,
+      "offset": 5025,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorClient+Variation.swift",
       "kind": "Dictionary",
-      "offset": 5290,
+      "offset": 5470,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorClient+Variation.swift",
       "kind": "StringLiteral",
-      "offset": 5716,
+      "offset": 5896,
       "length": 6,
       "value": "\"kind\""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorClient+Variation.swift",
       "kind": "StringLiteral",
-      "offset": 5724,
+      "offset": 5904,
       "length": 7,
       "value": "\"ERROR\""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorClient+Variation.swift",
       "kind": "StringLiteral",
-      "offset": 5733,
+      "offset": 5913,
       "length": 11,
       "value": "\"errorKind\""
     },
     {
       "filePath": "\/Users\/TonyDang\/WORKSPACES\/Numerators\/sdk-swift\/NumeratorSDK\/NumeratorSDK\/NumeratorClient+Variation.swift",
       "kind": "StringLiteral",
-      "offset": 5746,
+      "offset": 5926,
       "length": 16,
       "value": "\"Flag not found\""
     },
