@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/NumeratorSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		1oyhQ+OoYjDuUVyfDLeGEDc80sM=
+		GmyApTOP58VrIk+QCjgH83ApFuU=
 		</data>
 		<key>Modules/NumeratorSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		8nf24QapNG9SQSDegHJSW/6/Ur0=
+		pxXrNzafHMBxhqR1vqICMRJJDaA=
 		</data>
 		<key>Modules/NumeratorSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/NumeratorSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		8nf24QapNG9SQSDegHJSW/6/Ur0=
+		pxXrNzafHMBxhqR1vqICMRJJDaA=
 		</data>
 		<key>Modules/NumeratorSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		E6aC1mQlc4+87AM4U8IEvWgXBDU=
+		R6hj3ozZGD6mtYZgtD6PzByFo+c=
 		</data>
 		<key>Modules/NumeratorSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		1oyhQ+OoYjDuUVyfDLeGEDc80sM=
+		GmyApTOP58VrIk+QCjgH83ApFuU=
 		</data>
 		<key>Modules/NumeratorSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		NVMKy6Vf79mTLiCHLtTBscLXPu0=
+		duQWThv09uVAkxlgFghKGAglAUw=
 		</data>
 		<key>Modules/NumeratorSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/NumeratorSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		NVMKy6Vf79mTLiCHLtTBscLXPu0=
+		duQWThv09uVAkxlgFghKGAglAUw=
 		</data>
 		<key>Modules/NumeratorSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		x5vlZr8HJVXvehq31QeWmOvn9iA=
+		YOcvVC5Sr2z0J/8FPorIXkkJ/G4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -81,14 +81,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CRgUpfono9PBK+LpSRjT9ruT6+4UEivk3DHr5iUAoWM=
+			QJ5t6oVSf+2foBQ+226OTXlYlf88LgDtVjCWZJz7Sq0=
 			</data>
 		</dict>
 		<key>Modules/NumeratorSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			C0TpecOmVK9V6D6B8GFAqEWAApgHUeeIgC73b4eJlAA=
+			mbzqihtLW4yp45cPBv8/K+ivfWBIrdX11QBPUO8BM8w=
 			</data>
 		</dict>
 		<key>Modules/NumeratorSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -102,28 +102,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C0TpecOmVK9V6D6B8GFAqEWAApgHUeeIgC73b4eJlAA=
+			mbzqihtLW4yp45cPBv8/K+ivfWBIrdX11QBPUO8BM8w=
 			</data>
 		</dict>
 		<key>Modules/NumeratorSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aZFGEdwO7oey3JPgKYZBBdX1YbgOqLxfCbY202zD9RE=
+			iqqvqDiVMy+UwHJSd3le7/KB0jkaNcYDLvm4piWaMS8=
 			</data>
 		</dict>
 		<key>Modules/NumeratorSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CRgUpfono9PBK+LpSRjT9ruT6+4UEivk3DHr5iUAoWM=
+			QJ5t6oVSf+2foBQ+226OTXlYlf88LgDtVjCWZJz7Sq0=
 			</data>
 		</dict>
 		<key>Modules/NumeratorSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Yi2/S4OYV7fwBgaBsIEduxmxBPvTY+RlM16UWBcR1Go=
+			JRXjdsQF/zVpwElOfC7LIOyQTUJ4jBvlCt2hKaVZ0us=
 			</data>
 		</dict>
 		<key>Modules/NumeratorSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -137,14 +137,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Yi2/S4OYV7fwBgaBsIEduxmxBPvTY+RlM16UWBcR1Go=
+			JRXjdsQF/zVpwElOfC7LIOyQTUJ4jBvlCt2hKaVZ0us=
 			</data>
 		</dict>
 		<key>Modules/NumeratorSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HvBwoEg9C/64A+w0BmoXftO5iqsdGxm5b0C0X5HT8HM=
+			kHZT5NG2dG+1PmOsPsqGY/UEgXBXd9jZYjNKX6H1Efc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
